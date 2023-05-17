@@ -4,11 +4,17 @@
       "id": 1,
       "name": "Иван Иванов",
       "phone": "89023333333",
-      "isElected": true
+      "isElected": false
     },
     {
       "id": 2,
       "name": "Пётр Петров",
+      "phone": "89023333333",
+      "isElected": false
+    },
+    {
+      "id": 3,
+      "name": "Максим",
       "phone": "89023333333",
       "isElected": false
     }

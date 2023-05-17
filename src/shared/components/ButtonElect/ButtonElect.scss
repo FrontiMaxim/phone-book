@@ -1,0 +1,13 @@
+.btn_elect {
+    
+    background-image: url('./assets/elect.png');
+
+    &:hover {
+        background-image: url('./assets/elected.png');
+        transition: all .2s;
+    }
+}
+
+.elected {
+    background-image: url('./assets/elected.png');
+}
