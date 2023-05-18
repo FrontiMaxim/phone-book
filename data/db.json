@@ -1,22 +1,16 @@
 {
   "contacts": [
     {
-      "id": 1,
-      "name": "Иван Иванов",
-      "phone": "89023333333",
-      "isElected": false
+      "id": 1684405917390,
+      "name": "Илья",
+      "phone": "89999999999",
+      "isFavorite": false
     },
     {
-      "id": 2,
-      "name": "Пётр Петров",
-      "phone": "89023333333",
-      "isElected": false
-    },
-    {
-      "id": 3,
+      "id": 1684406110692,
       "name": "Максим",
-      "phone": "89023333333",
-      "isElected": false
+      "phone": "89999999999",
+      "isFavorite": true
     }
   ]
 }

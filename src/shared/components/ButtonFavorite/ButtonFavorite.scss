@@ -1,0 +1,22 @@
+.btn_favorite {
+    width: 15px;
+    height: 15px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    cursor: pointer;
+
+    transition: all .2s;
+    
+    background-image: url('./assets/favorite.png');
+
+    &:hover {
+        background-image: url('./assets/is-favorite.png');
+        transition: all .2s;
+    }
+}
+
+.favorite {
+    background-image: url('./assets/is-favorite.png');
+}

@@ -1,10 +1,14 @@
+import { BASE_URL } from "../environment";
+
 import updateContact from "../entities/contact/api/updateContact";
 import sortContacts from "./sortContacts";
+
 import List from "../shared/components/List/List";
 import Card from "../widgets/Card/Card";
+
 import StoreContacts from "../store/StoreContacts";
 
-const changeIsElectСontact = async (contact) => {
+const changeIsFavoriteСontact = async (contact) => {
 
     const storeContacts = new StoreContacts();
 
@@ -12,9 +16,9 @@ const changeIsElectСontact = async (contact) => {
         ...contact
     };
 
-    body.isElected = !body.isElected;
+    body.isFavorite = !body.isFavorite;
    
-    const response = await updateContact(`http://localhost:9001/contacts/${body.id}`, body);
+    const response = await updateContact(`${BASE_URL}${body.id}`, body);
     
     if(response.status === 200) {
 
@@ -28,4 +32,4 @@ const changeIsElectСontact = async (contact) => {
     }
 }
 
-export default changeIsElectСontact;
+export default changeIsFavoriteСontact;

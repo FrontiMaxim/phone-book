@@ -1,15 +1,15 @@
 const sortContacts = (contacts) => {
-    const contactIsNotElected = [];
-    const contactIsElected = [];
+    const contactIsNotFavorite = [];
+    const contactIsFavorite = [];
 
     contacts.forEach(contact => {
-        if(contact.isElected) contactIsElected.push(contact);
-        else contactIsNotElected.push(contact);
+        if(contact.isFavorite) contactIsFavorite.push(contact);
+        else contactIsNotFavorite.push(contact);
     });
 
-    contactIsNotElected.sort((contact1, contact2) => sortByName(contact1.name, contact2.name));
+    contactIsNotFavorite.sort((contact1, contact2) => sortByName(contact1.name, contact2.name));
     
-    return [...contactIsElected, ...contactIsNotElected];
+    return [...contactIsFavorite, ...contactIsNotFavorite];
 }
 
 export default sortContacts;
