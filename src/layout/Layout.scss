@@ -1,0 +1,14 @@
+.layout {
+
+    width: inherit;
+    height: inherit;
+
+    display: grid;
+    grid-template-areas: 
+                        'header'
+                        'content'
+                        'footer';
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+}

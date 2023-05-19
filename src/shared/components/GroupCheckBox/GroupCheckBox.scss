@@ -1,0 +1,14 @@
+.group_checkbox {
+    display: flex;
+    align-items: center;
+
+    .checkbox {
+        cursor: pointer;
+    }
+
+    .label {
+        margin-left: 5px;
+    }
+
+    
+}

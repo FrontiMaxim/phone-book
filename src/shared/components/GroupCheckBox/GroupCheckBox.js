@@ -15,9 +15,9 @@ const GroupCheckBox = (label, name, value) => {
     checkboxElement.className = 'checkbox';
     checkboxElement.value = value;
 
-    
-    groupCheckBoxElement.appendChild(labelElement);
     groupCheckBoxElement.appendChild(checkboxElement);
+    groupCheckBoxElement.appendChild(labelElement);
+   
 
     return groupCheckBoxElement;
 }

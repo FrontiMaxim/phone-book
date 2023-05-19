@@ -5,9 +5,9 @@ const validateFormContact = (contact) => {
    
     if(!nameIsValid) {
         errorInputNameElement.innerHTML = 'Поле не может быть пустым'
-        errorInputNameElement.classList.add('open');
+        errorInputNameElement.classList.add('error-open');
     } else {
-        errorInputNameElement.classList.remove('open');
+        errorInputNameElement.classList.remove('error-open');
     }
 
     const regexp = /^(\+7|8)([0-9]{10})/;
@@ -16,9 +16,9 @@ const validateFormContact = (contact) => {
 
     if(!phoneIsValid) {
         errorInputPhoneElement.innerHTML = 'Неверный формат номера телефона'
-        errorInputPhoneElement.classList.add('open');
+        errorInputPhoneElement.classList.add('error-open');
     } else {
-        errorInputPhoneElement.classList.remove('open');
+        errorInputPhoneElement.classList.remove('error-open');
     }
 
     return nameIsValid && phoneIsValid;

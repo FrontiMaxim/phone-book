@@ -1,0 +1,11 @@
+.content {
+    grid-area: content;
+
+    overflow-y: scroll;
+
+    max-height: 500px;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

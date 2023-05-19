@@ -1,0 +1,18 @@
+@import '../../shared/styles/color';
+
+.header {
+    grid-area: header;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    min-height: 70px;
+    max-height: 80px;
+
+    .icon_phone {
+        padding: 5px;
+        border-radius: 10px;
+        background-color: $lightGrey;
+    }
+}

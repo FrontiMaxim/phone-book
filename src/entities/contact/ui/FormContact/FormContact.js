@@ -10,11 +10,25 @@ const FormContact = () => {
     const formContactElement = document.createElement('form');
     formContactElement.className = 'form_contact';
 
-    const inputName = GroupInput('Name', 'name', 'Maxim');
-    const inputPhone = GroupInput('Phone', 'phone', '89999999999');
-    const checkbox = GroupCheckBox('Favorites', 'isFavorite', true);
-    const submitElement = Button('Создать', 'submit');
+    const titleElement = document.createElement('div');
+    titleElement.innerHTML = 'Add contact';
+    titleElement.className = 'form_contact_title';
 
+    const wrapperGroup = document.createElement('div');
+
+    const inputName = GroupInput('Name', 'name', 'Maxim');
+    inputName.classList.add('form_contact_wrapper_group');
+
+    const inputPhone = GroupInput('Phone', 'phone', '89999999999');
+    inputPhone.classList.add('form_contact_wrapper_group');
+    
+    const checkbox = GroupCheckBox('Favorites', 'isFavorite', true);
+    checkbox.classList.add('form_contact_wrapper_group');
+
+    const submitElement = Button('Создать', 'submit', 'primary');
+    submitElement.classList.add('form_contact_sumbit');
+
+    formContactElement.appendChild(titleElement);
     formContactElement.appendChild(inputName);
     formContactElement.appendChild(inputPhone);
     formContactElement.appendChild(checkbox);

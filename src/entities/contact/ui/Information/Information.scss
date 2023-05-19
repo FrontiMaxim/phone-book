@@ -1,19 +1,37 @@
 .information {
 
+    display: grid;
+    grid-template-areas: 'photo name' 
+                         'photo phone';
+
+
+    width: 60%;
+    max-width: 220px;
+    min-width: 200px; 
+
     .photo {
-        background-image: url('./assets/photo.png');
+        background-image: url('./assets/photo.svg');
         background-repeat: no-repeat;
         background-size: contain;
-        width: 30px;
-        height: 30px;
+
+        min-height: 50px;
+        max-height: 50px;
+       
+        grid-area: photo;
+
+        align-self: center;
     }
     
     .name {
-    
+        grid-area: name;
+        font-size: 18px;
+
+        align-self: flex-end;
     }
     
     .phone {
-    
+        grid-area: phone;
+        font-size: 12px;
     }
 }
 

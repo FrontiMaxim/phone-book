@@ -4,6 +4,7 @@
   "description": "app for storing phone contacts",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "start-client": "webpack serve",
     "start-server": "json-server -p 9001 -w ./data/db.json"
   },

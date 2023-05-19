@@ -20,7 +20,6 @@ const Card = (contact) => {
     containerButtonElement.className = 'container_button';
 
     const informationElement = Information(contact.name, contact.phone);
-    informationElement.classList.add('information_wrapper');
     
     const cardElement = document.createElement('div');
     cardElement.appendChild(informationElement);

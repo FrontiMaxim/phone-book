@@ -1,0 +1,33 @@
+@import '../../shared/styles/color';
+
+
+.wrapper_search {
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    width: 80%;
+
+    .search {
+        border-radius: 10px;
+        border: 2px solid $darkGrey;
+    
+        width: 100%;
+        height: 35px;
+    
+        padding-left: 30px;
+    
+        outline: none;
+
+        &:hover {
+            box-shadow: 0 0 2px $darkGrey;
+        }
+    }
+
+    .icon_glass {
+        position: absolute;
+        left: 5px;
+    }
+}

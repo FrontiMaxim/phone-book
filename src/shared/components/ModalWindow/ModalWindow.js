@@ -8,7 +8,7 @@ const ModalWindow = (children) => {
         if(event.target.className.includes('modal_window')) closeModalWindow();
     });
 
-    children.className = 'modal_window_children';
+    children.classList.add('modal_window_children');
 
     modalWindowElement.appendChild(children);
    

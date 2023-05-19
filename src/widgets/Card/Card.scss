@@ -1,10 +1,29 @@
-.card {
-    .information_wrapper {
+@import '../../shared/styles/color';
 
+.card {
+
+    display: flex;
+    justify-content: space-between;
+
+    height: 70px;
+
+    min-height: 70px;
+    max-height: 80px;
+
+    border-top: 2px solid  $darkGrey;
+
+    &:nth-last-child(1) {
+        border-bottom: 2px solid  $darkGrey;
     }
 
-    .container_button {
+    padding-left: 2%;
 
+    .container_button {
+        margin-right: 2%;
         
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
 }

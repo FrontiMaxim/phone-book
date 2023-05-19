@@ -7,7 +7,7 @@ const findСontact = (event) => {
     
     const storeContacts = new StoreContacts();
     let contacts = storeContacts.getData();
-    contacts = contacts.filter(contact => contact.name.toLowerCase().includes(string));
+    contacts = contacts.filter(contact => contact.name.toLowerCase().startsWith(string));
     
     const elementsContact = contacts.map(contact => Card(contact));
     

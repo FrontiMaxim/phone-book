@@ -1,4 +1,47 @@
 .form_contact {
-    z-index: 5;
-    position: absolute
+
+    position: relative;
+
+    height: 50%;
+    max-height: 300px;
+
+    @media screen and (orientation: landscape) {
+        height: 90%;
+    }
+
+
+    width: 80%;
+
+    max-width: 300px;
+
+    padding: 10px 5px;
+
+    border-radius: 10px;
+   
+    background-color: white;
+
+    overflow: hidden;
+
+    .form_contact_title {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .form_contact_wrapper_group {
+        margin-left: 10px;
+        margin-top: 20px;
+
+        @media screen and (orientation: landscape) {
+            margin-top: 10px;
+        }
+    }
+
+    .form_contact_sumbit {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+    }
 }

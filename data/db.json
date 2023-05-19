@@ -1,16 +1,10 @@
 {
   "contacts": [
     {
-      "id": 1684405917390,
-      "name": "Илья",
-      "phone": "89999999999",
-      "isFavorite": false
-    },
-    {
-      "id": 1684406110692,
+      "id": 1684502151037,
       "name": "Максим",
       "phone": "89999999999",
-      "isFavorite": true
+      "isFavorite": false
     }
   ]
 }
